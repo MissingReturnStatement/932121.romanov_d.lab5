@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lab 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="newsContainer">
+        <h2>Новость 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic, ipsa, ullam, cupiditate eveniet at voluptate corrupti commodi nobis ratione voluptatem! Vel animi totam cupiditate doloribus ad ab exercitationem officia eveniet impedit? Deleniti quasi nisi consectetur perspiciatis quibusdam nostrum, enim perferendis nam, magni molestias recusandae id libero vitae, repudiandae praesentium.</p>
+        <button onclick="openModal('modal-1')">Открыть всплывающее окно</button>
+    </div>
+    <div class="newsContainer">
+        <h2>Новость 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic, ipsa, ullam, cupiditate eveniet at voluptate corrupti commodi nobis ratione voluptatem! Vel animi totam cupiditate doloribus ad ab exercitationem officia eveniet impedit? Deleniti quasi nisi consectetur perspiciatis quibusdam nostrum, enim perferendis nam, magni molestias recusandae id libero vitae, repudiandae praesentium.</p>
+        <button onclick="openModal('modal-2')">Открыть всплывающее окно</button>
+    </div>
+    <div class="newsContainer">
+        <h2>Новость 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic, ipsa, ullam, cupiditate eveniet at voluptate corrupti commodi nobis ratione voluptatem! Vel animi totam cupiditate doloribus ad ab exercitationem officia eveniet impedit? Deleniti quasi nisi consectetur perspiciatis quibusdam nostrum, enim perferendis nam, magni molestias recusandae id libero vitae, repudiandae praesentium.</p>
+        <button onclick="openModal('modal-3')">Открыть всплывающее окно</button>
+    </div>
+
+    <div class="modal" id="modal-1">
+        <div class="modalWindow">
+            <h1>Новость 1</h1>
+            <p>Новость 1: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, facere quos doloribus iure qui quas cupiditate rem eveniet placeat magni repudiandae ipsam perspiciatis esse nesciunt, similique omnis laudantium voluptates! Blanditiis at cum dolorem voluptate culpa libero unde sequi consequatur quo.</p>
+        </div>
+        <div class="overlay" onclick="closeModal('modal-1')"></div>
+    </div>
+    <div class="modal" id="modal-2">
+        <div class="modalWindow">
+            <h1>Новость 2</h1>
+            <p>Новость 2: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum laudantium iusto animi. Magni dicta, rem quisquam minima tenetur quo vitae. Error quis ipsa laboriosam id repudiandae cupiditate autem harum ad iusto velit? Id, odit animi?</p>
+        </div>
+        <div class="overlay" onclick="closeModal('modal-2')"></div>
+    </div>
+    <div class="modal" id="modal-3">
+        <div class="modalWindow">
+            <h1>Новость 3</h1>
+            <p>Новость 3: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, excepturi dignissimos veritatis blanditiis assumenda in nostrum quasi laborum asperiores nemo officia cum incidunt debitis est sequi? Ut, impedit natus exercitationem commodi fugit ullam dicta non excepturi esse vel assumenda repellendus. Non corporis error repudiandae vel. Magni, corporis. Porro sequi quidem mollitia aliquam sit, et explicabo voluptas suscipit, alias, magnam vitae!</p>
+        </div>
+        <div class="overlay" onclick="closeModal('modal-3')"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
